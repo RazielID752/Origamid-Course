@@ -1,9 +1,9 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  display: grid;
   background: #f7f7f7;
   gap: 60px;
-  margin-top: 60px;
+  justify-items: center;
 }
 
 a {
@@ -13,21 +13,63 @@ a {
   border-radius: 4px;
   color: #000;
 }
+
+p, h1, h2, h3{
+  margin: 0px;
+}
 .logo{
   max-width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin: 0 auto;
 }
-
 .menu{
   display: grid;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .nav{
-  padding: 30px;
+  padding: 40px;
+}
+.info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+.rodape{
+  background: #fff;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.intro{
+  background: #fff;
+  align-items: center;
+  padding: 40px;
+  text-align: right;
+  position: relative;
+  display: grid;
+  align-content: center;
+  justify-content: end;
+}
+.vantagens {
+  background: #fff;
+  padding: 40px;
+}
+.vantagens-intem{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+.bike{
+  max-width: 100%;
+  display: block;
+}
+.vantagens-intem p {
+  grid-column: 2;
 }
