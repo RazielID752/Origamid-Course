@@ -117,3 +117,10 @@ main{
 .vantagens-intem p {
   grid-column: 2;
 }
+.img-1{
+  display: grid;
+  max-width: 100%;
+}
+.img-1, .bike{
+  display:grid;
+}
