@@ -14,6 +14,9 @@ p{
 p, h1, h2, h3{
   margin: 0px;
 }
+li {
+  list-style: none;
+}
 .logo{
   max-width: 100%;
   display: flex;
@@ -24,28 +27,31 @@ p, h1, h2, h3{
 }
 
 /* AQUI COMEÇA O MENU */
-.menu{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.menu a:hover{
-  background-color: #e21;
-  color: #fff;
-  transition: 0.5;
-}
-.menu a {
-  text-decoration: none;
-  background: #fff;
-  padding: 15px 30px;
-  border-radius: 4px;
-  color: #000;
-}
 .nav{
   display: flex;
   padding: 40px;
   gap: 20px;
+}
+.list-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+.list-menu li{
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+.list-menu li a:hover{
+  background-color: #e21;
+  color: #fff;
+  transition: 0.5;
 }
 /* //MENU */
 
@@ -136,4 +142,18 @@ main{
   .info{
     grid-template-columns: 1fr
   }
+  .bike{
+    width: 390px;
+  }
+  .subtitulo{
+    font-size: 42px;
+    word-wrap: break-word;
+  }
+  .intro{
+    text-align: inherit;
+  }
+  .menu .nav{
+    flex-wrap: wrap;
+  }
+  
 }
