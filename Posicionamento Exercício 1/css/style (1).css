@@ -48,8 +48,8 @@ li {
   text-decoration: none;
   color: #000;
 }
-.list-menu li:hover{
-  outline: 2px solid #e21;
+.list-menu li a:hover{
+  background-color: #e21;
   color: #fff;
   transition: 0.5;
 }
@@ -62,7 +62,7 @@ li {
   max-width: 100%;
   padding-bottom: 20px;
 }
-.button-bike :hover{
+a button:hover{
   background:#fff ;
   color: #e21;
   outline: 2px solid #e21;
@@ -98,8 +98,6 @@ li {
   text-align: center;
   box-sizing: border-box;
 }
-
-/*  / Main  */
 main{
   justify-items: center;
   display: grid;
@@ -138,26 +136,9 @@ main{
 .img-1, .bike{
   display:grid;
 }
-/*  // Main  */
 
-/*  / Breakpoint desktop  */
-@media(max-width:800px){
-  .info{
-    grid-template-columns: 1fr;
-  }
-  .subtitulo{
-    font-size: 42px;
-    word-wrap: break-word;
-    text-align: center;
-  }
-  .intro{
-    text-align: center;
-  }
-}
-/*  // Breakpoint desktop  */
 
-/*  / Breakpoint mobile  */
-@media (min-width: 390px) and (max-width: 414px){
+@media (min-width:390px) and (max-width:414px){
   .info{
     grid-template-columns: 1fr
   }
@@ -167,13 +148,12 @@ main{
   .subtitulo{
     font-size: 42px;
     word-wrap: break-word;
-    text-align: center;
   }
   .intro{
-    text-align: center;
+    text-align: inherit;
   }
   .menu .nav{
     flex-wrap: wrap;
   }
+  
 }
-/*  // Breakpoint mobile  */
